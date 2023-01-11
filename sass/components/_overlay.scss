@@ -1,0 +1,20 @@
+/* Overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: var(--works-bgc);
+}
+
+.overlay__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}

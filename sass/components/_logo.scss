@@ -1,0 +1,19 @@
+/*  Logo  */
+.logo {
+  color: var(--rare-text-color);
+  font-family: var(--logo-font-family), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.logo__part {
+  color: var(--accent-color);
+}

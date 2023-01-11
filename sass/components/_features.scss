@@ -1,0 +1,41 @@
+/* Features */
+.features {
+  @extend %section;
+
+  padding-bottom: 0;
+}
+
+.features__list {
+  @include positionFlex($jc: flex-start, $ai: flex-start);
+}
+
+.features__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__icon-wrap {
+  @include positionFlex();
+
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: var(--team-bgc);
+}
+
+.features__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  color: var(--title-text-color);
+
+  text-transform: uppercase;
+}
+
+.features__text {
+  width: 270px;
+
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}

@@ -1,0 +1,20 @@
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backdrop-bgc);
+  opacity: 1;
+  visibility: visible;
+  perspective: 600px;
+
+  @include transition(opacity, visibility);
+
+  &--is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}

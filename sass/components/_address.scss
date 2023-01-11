@@ -1,0 +1,25 @@
+/* Address */
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: var(--footer-text-color);
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--white {
+    color: var(--secondary-text-color);
+  }
+}

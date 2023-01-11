@@ -1,0 +1,24 @@
+/* Team */
+.team {
+  @extend %section;
+
+  background-color: var(--team-bgc);
+}
+
+.team__list {
+  @include positionFlex($jc: flex-start);
+
+  background-color: var(--team-bgc);
+}
+
+.team__list-item {
+  width: 270px;
+  box-shadow: var(--container-shadow);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--primary-bgc);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

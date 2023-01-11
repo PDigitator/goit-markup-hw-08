@@ -1,0 +1,33 @@
+/* Checkbox */
+.checkbox__container {
+  position: relative;
+  display: flex;
+}
+
+.checkbox__input {
+  appearance: none;
+  width: 16px;
+  height: 15px;
+
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  border: 2px solid var(--modal-form-check-border-color);
+  border-radius: 2px;
+
+  @include transition(outline, background-color);
+
+  &:checked {
+    outline: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.checkbox__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+
+  fill: var(--secondary-text-color);
+}

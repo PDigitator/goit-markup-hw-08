@@ -1,0 +1,17 @@
+/* Filter */
+.portfolio__filter {
+  @include positionFlex($ai: flex-start);
+
+  margin-bottom: 50px;
+}
+
+.filter__list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__button {
+  min-width: 73px;
+  min-height: 38px;
+
+  padding: 6px 22px;
+}

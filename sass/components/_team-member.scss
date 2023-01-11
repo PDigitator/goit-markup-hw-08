@@ -1,0 +1,22 @@
+/* Team-member */
+.team-member__container {
+  padding: 30px 32px;
+}
+
+.team-member__name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.team-member__position {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}

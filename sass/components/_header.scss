@@ -1,0 +1,24 @@
+/*  Шапка сайту  */
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.header__container {
+  @extend %container;
+  @include positionFlex($jc: flex-start);
+}
+
+.header__navigation {
+  @include positionFlex($jc: flex-start);
+}
+
+.header__contacts {
+  @include positionFlex($jc: flex-start);
+
+  margin-left: auto;
+}
+
+.header__logo {
+  padding: 24px 0;
+  margin-right: 93px;
+}

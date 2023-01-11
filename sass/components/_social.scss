@@ -1,0 +1,39 @@
+/* Social */
+.social-links {
+  @include positionFlex();
+
+  gap: 10px;
+}
+
+.social-links__list-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  @include positionFlex();
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background-color: var(--primary-bgc);
+  color: var(--clients-logo-color);
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+  }
+
+  &--dark {
+    background-color: var(--social-dark-bgc);
+    color: var(--secondary-text-color);
+  }
+}
+
+.social-link__icon {
+  fill: currentColor;
+}

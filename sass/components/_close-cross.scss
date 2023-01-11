@@ -1,0 +1,21 @@
+/* Close-cross */
+.close-cross {
+  @include positionFlex($type: inline-flex);
+
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--close-cross-border-color);
+
+  @include transition(border-color, color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.close-cross__icon {
+  fill: currentColor;
+}

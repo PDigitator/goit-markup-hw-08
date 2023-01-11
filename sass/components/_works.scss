@@ -1,0 +1,16 @@
+/* Works */
+.works {
+  @extend %section;
+}
+
+.works__list {
+  @include positionFlex($jc: flex-start);
+}
+
+.works__list-item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
