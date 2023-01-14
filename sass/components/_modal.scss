@@ -1,10 +1,20 @@
 .modal {
-  width: 528px;
+  width: 450px;
   padding: 40px;
 
   background-color: var(--primary-bgc);
   box-shadow: var(--container-shadow);
   border-radius: 4px;
+
+  // mobile 320
+  @media screen and (max-width: 449px) {
+    width: 100vw;
+  }
+
+  // desctop
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .modal__container {
@@ -36,6 +46,11 @@
   font-size: 20px;
   line-height: calc(23 / 20);
   color: var(--title-text-color);
+
+  // desctop
+  @media screen and (min-width: 1200px) {
+    line-height: calc(30 / 20);
+  }
 }
 
 .modal__group {
@@ -116,8 +131,8 @@
   }
 
   &::placeholder {
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.01em;
     color: var(--modal-form-messge-placeholder-color);
   }
@@ -134,9 +149,15 @@
 .modal__agreement-link {
   user-select: none;
 
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   color: var(--primary-text-color);
+
+  // desctop
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .modal__agreement-link {
