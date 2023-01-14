@@ -18,6 +18,7 @@
           <a class="logo header__logo link" href="/" lang="en"
             ><span class="logo__part">Web</span>Studio</a
           >
+
           <!-- TODO: замінити посилання ./index.html на дійсне -->
           <ul class="navigation__list list">
             <li class="navigation__list-item">
@@ -36,7 +37,7 @@
         <ul class="header__contacts contacts list">
           <li class="contacts__list-item">
             <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+              <svg class="contacts__icon contacts__icon--horizontal" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com
@@ -44,19 +45,29 @@
           </li>
           <li class="contacts__list-item">
             <a class="contacts__link link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="contacts__icon contacts__icon--vertical" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu button"
+          aria-label="Мобільне меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu-toggle"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <!-- Портфоліо -->
-      <section class="portfolio">
+      <!-- <section class="portfolio">
         <div class="container">
           <h1 class="heading visually-hidden">Портфоліо</h1>
           <ul class="filter portfolio__filter list">
@@ -79,9 +90,9 @@
                 Маркетинг
               </button>
             </li>
-          </ul>
-          <!-- TODO: замінити посилання ./index.html на дійсне -->
-          <ul class="card-set list">
+          </ul> -->
+      <!-- TODO: замінити посилання ./index.html на дійсне -->
+      <!-- <ul class="card-set list">
             <li class="card-set__item">
               <a class="product link" href="./index.html">
                 <div class="product__thumb">
@@ -240,11 +251,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Підвал -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__container">
         <div class="footer__adress-wrap">
           <a class="logo footer__logo link" href="/" lang="en"
@@ -321,7 +332,7 @@
                 href="https://www.linkedin.com"
                 rel="noopener noreferrer nofollow"
                 lang="en"
-                aria-label="Linkedin icon"
+                aria-label="LinkedIn icon"
               >
                 <svg class="social-link__icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
@@ -351,6 +362,94 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- Мобільне меню -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button
+        class="mobile-menu__btn-close button js-close-menu"
+        type="button"
+        aria-label="Закрити"
+      >
+        <svg class="mobile-menu_btn-close-icon" width="40" height="40">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__nav list">
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a
+            class="mobile-menu__nav-link mobile-menu__nav-link--current link"
+            href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href="./index.html">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__contacts list">
+        <li class="mobile-menu__contacts-item">
+          <a
+            class="mobile-menu__contacts-link mobile-menu__contacts-link--accent link"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__socials list">
+        <li class="mobile-menu__socials-item">
+          <a
+            class="mobile-menu__socials-link link"
+            href="https://www.instagram.com"
+            rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a
+            class="mobile-menu__socials-link link"
+            href="https://www.twitter.com"
+            rel="noopener noreferrer nofollow"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a
+            class="mobile-menu__socials-link link"
+            href="https://www.facebook.com"
+            rel="noopener noreferrer nofollow"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a
+            class="mobile-menu__socials-link link"
+            href="https://www.linkedin.com"
+            rel="noopener noreferrer nofollow"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Підключення скриптів -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
