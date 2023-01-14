@@ -13,12 +13,42 @@
 }
 
 .header__contacts {
-  @include positionFlex($jc: flex-start);
-
   margin-left: auto;
+
+  // tablet
+  @media screen and (max-width: 1199px) {
+    @include positionFlex($ai: flex-start);
+    flex-direction: column;
+  }
+
+  // desctop
+  @media screen and (min-width: 1200px) {
+    @include positionFlex($jc: flex-start);
+  }
 }
 
 .header__logo {
-  padding: 24px 0;
-  margin-right: 93px;
+  padding: 16px 0 15px;
+
+  // mobile
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+  }
+  // tablet
+  @media screen and (min-width: 767px) {
+    padding: 26px 0 25px;
+    margin-right: 87px;
+  }
+  // desctop
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0;
+    margin-right: 93px;
+  }
+}
+
+.header__contacts {
+  // mobile
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
