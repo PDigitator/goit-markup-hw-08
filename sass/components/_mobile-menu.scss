@@ -56,6 +56,14 @@
   background-color: transparent;
   color: var(--title-text-color);
   outline: none;
+
+  @include transition(color);
+  // mobile
+  @media screen and (max-width: 767px) {
+    &:active {
+      color: var(--accent-color);
+    }
+  }
 }
 
 .mobile-menu_btn-close-icon {
