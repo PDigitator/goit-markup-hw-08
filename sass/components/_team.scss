@@ -6,19 +6,40 @@
 }
 
 .team__list {
-  @include positionFlex($jc: flex-start);
-
   background-color: var(--team-bgc);
+
+  @media screen and (min-width: 768px) {
+    // tablet
+    @include positionFlex($jc: flex-start);
+    flex-wrap: wrap;
+
+    gap: var(--indent);
+  }
 }
 
 .team__list-item {
-  width: 270px;
   box-shadow: var(--container-shadow);
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--primary-bgc);
 
   &:not(:last-child) {
-    margin-right: 30px;
+    // mobile
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+
+    --items: 2;
+    flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    --items: 4;
   }
 }

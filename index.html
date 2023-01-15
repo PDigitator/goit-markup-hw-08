@@ -143,19 +143,49 @@
           <h2 class="heading">Чим ми займаємося</h2>
           <ul class="works__list list">
             <li class="works__list-item">
-              <img src="./images/we-do-1.jpg" alt="Планшет на столі" width="370" height="294" />
+              <img
+                srcset="
+                  ./images/desktop/we-do-1-370x294.jpg    1x,
+                  ./images/desktop/we-do-1-370x294@2x.jpg 2x
+                "
+                src="./images/desktop/we-do-1-370x294.jpg"
+                alt="Планшет на столі"
+                width="100%"
+                height="auto"
+                loading="lazy"
+              />
               <div class="overlay">
                 <p class="overlay__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="works__list-item">
-              <img src="./images/we-do-2.jpg" alt="Ноутбук на столі" width="370" height="294" />
+              <img
+                srcset="
+                  ./images/desktop/we-do-2-370x294.jpg    1x,
+                  ./images/desktop/we-do-2-370x294@2x.jpg 2x
+                "
+                src="./images/desktop/we-do-2-370x294.jpg"
+                alt="Ноутбук на столі"
+                width="100%"
+                height="auto"
+                loading="lazy"
+              />
               <div class="overlay">
                 <p class="overlay__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="works__list-item">
-              <img src="./images/we-do-3.jpg" alt="Планшет у руці" width="370" height="294" />
+              <img
+                srcset="
+                  ./images/desktop/we-do-3-370x294.jpg    1x,
+                  ./images/desktop/we-do-3-370x294@2x.jpg 2x
+                "
+                src="./images/desktop/we-do-3-370x294.jpg"
+                alt="Планшет у руці"
+                width="100%"
+                height="auto"
+                loading="lazy"
+              />
               <div class="overlay">
                 <p class="overlay__text">Дизайнерські рішення</p>
               </div>
@@ -171,12 +201,43 @@
           <ul class="team__list list">
             <li class="team__list-item">
               <div class="team-member">
-                <img
-                  srcset="./images/mobile/team-1-480.jpg, ./images/mobile/team-1-960@2x.jpg"
-                  src="./images/mobile/team-1-480.jpg"
-                  alt="Ігор Дем'яненко"
-                  width="480"
-                />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/team-1-270x260.jpg    1x,
+                      ./images/desktop/team-1-270x260@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/team-1-354x374.jpg    1x,
+                      ./images/tablet/team-1-354x374@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/team-1-450x460.jpg    1x,
+                      ./images/mobile/team-1-450x460@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/mobile/team-1-450x460.jpg"
+                    alt="Ігор Дем'яненко"
+                    width="100%"
+                    height="auto"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="team-member__container">
                   <h3 class="team-member__name">Ігор Дем'яненко</h3>
                   <p lang="en" class="team-member__position">Product Designer</p>
@@ -239,7 +300,42 @@
             </li>
             <li class="team__list-item">
               <div class="team-member">
-                <img src="./images/team-2.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/team-2-270x260.jpg    1x,
+                      ./images/desktop/team-2-270x260@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/team-2-354x374.jpg    1x,
+                      ./images/tablet/team-2-354x374@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/team-2-450x460.jpg    1x,
+                      ./images/mobile/team-2-450x460@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/mobile/team-2-450x460.jpg"
+                    alt="Ольга Рєпіна"
+                    width="100%"
+                    height="auto"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="team-member__container">
                   <h3 class="team-member__name">Ольга Рєпіна</h3>
                   <p lang="en" class="team-member__position">Frontend Developer</p>
@@ -302,7 +398,42 @@
             </li>
             <li class="team__list-item">
               <div class="team-member">
-                <img src="./images/team-3.jpg" alt="Микола Тарасов" width="270" height="260" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/team-3-270x260.jpg    1x,
+                      ./images/desktop/team-3-270x260@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/team-3-354x374.jpg    1x,
+                      ./images/tablet/team-3-354x374@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/team-3-450x460.jpg    1x,
+                      ./images/mobile/team-3-450x460@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/mobile/team-3-450x460.jpg"
+                    alt="Микола Тарасов"
+                    width="100%"
+                    height="auto"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="team-member__container">
                   <h3 class="team-member__name">Микола Тарасов</h3>
                   <p lang="en" class="team-member__position">Marketing</p>
@@ -365,7 +496,42 @@
             </li>
             <li class="team__list-item">
               <div class="team-member">
-                <img src="./images/team-4.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/team-4-270x260.jpg    1x,
+                      ./images/desktop/team-4-270x260@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/team-4-354x374.jpg    1x,
+                      ./images/tablet/team-4-354x374@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/team-4-450x460.jpg    1x,
+                      ./images/mobile/team-4-450x460@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/mobile/team-4-450x460.jpg"
+                    alt="Михайло Єрмаков"
+                    width="100%"
+                    height="auto"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="team-member__container">
                   <h3 class="team-member__name">Михайло Єрмаков</h3>
                   <p lang="en" class="team-member__position">UI Designer</p>
@@ -431,7 +597,7 @@
       </section>
 
       <!-- Секція Постійні клієнти -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="heading">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -479,7 +645,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Підвал -->

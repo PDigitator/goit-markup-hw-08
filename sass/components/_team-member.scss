@@ -1,6 +1,16 @@
 /* Team-member */
 .team-member__container {
-  padding: 30px 32px;
+  padding: 30px 0 24px;
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    padding: 30px 0 24px;
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    padding: 30px 0;
+  }
 }
 
 .team-member__name {
