@@ -1,5 +1,6 @@
 /* Placeholders */
 
+/* Container */
 %container {
   min-width: 320px;
   padding-right: 15px;
@@ -23,7 +24,27 @@
   }
 }
 
+/* Section */
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // desctop
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+/* Card set */
+%card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+%card-set__item {
+  display: inline-flex;
+
+  flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
 }
