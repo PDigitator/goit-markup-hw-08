@@ -4,4 +4,8 @@ body {
   background-color: var(--primary-bgc);
   font-family: var(--primary-font-family), sans-serif;
   letter-spacing: 0.03em;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
