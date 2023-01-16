@@ -22,14 +22,24 @@
     line-height: calc(20 / 16);
     color: var(--footer-text-color);
   }
+
+  // mobile + tablet
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__button {
-  @include positionFlex();
-
+  @include positionFlex($type: inline-flex);
+  min-width: 200px;
   flex-basis: 200px;
   height: 50px;
   gap: 10px;
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    @include positionFlex();
+  }
 }
 
 .form-button {

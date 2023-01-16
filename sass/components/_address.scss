@@ -6,7 +6,12 @@
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {
@@ -14,6 +19,7 @@
 
   @include transition(color);
 
+  &:active,
   &:hover,
   &:focus {
     color: var(--accent-color);

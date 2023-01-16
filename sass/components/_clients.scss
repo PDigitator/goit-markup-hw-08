@@ -4,14 +4,25 @@
 }
 
 .clients__list {
-  @include positionFlex();
-
-  gap: 30px;
+  @extend %card-set;
 }
 
 .clients__list-item {
-  width: 170px;
   height: 92px;
+  display: inline-flex;
+
+  --items: 2;
+  flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    --items: 3;
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    --items: 6;
+  }
 }
 
 .clients__link {
@@ -26,6 +37,7 @@
 
   @include transition(border-color, color);
 
+  &:active,
   &:hover,
   &:focus {
     border-color: var(--accent-color);

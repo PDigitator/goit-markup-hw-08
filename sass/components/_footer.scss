@@ -8,11 +8,34 @@
 
 .footer__container {
   @extend %container;
-  @include positionFlex($jc: flex-start, $ai: baseline);
+
+  // tablet
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 60px;
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    @include positionFlex($jc: flex-start, $ai: baseline);
+  }
 }
 
 .footer__adress-wrap {
-  margin-right: 95px;
+  text-align: center;
+
+  // mobile
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-right: 95px;
+  }
 }
 
 .footer__logo {
@@ -23,8 +46,19 @@
 }
 
 .footer__form-wrap {
-  margin-left: auto;
-  width: 570px;
+  text-align: center;
+
+  // tablet
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    min-width: 450px;
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-left: auto;
+    width: 570px;
+  }
 }
 
 .footer__form-title {
@@ -38,7 +72,10 @@
 }
 
 .footer__form {
-  @include positionFlex($jc: flex-start);
+  // desktop
+  @media screen and (min-width: 1200px) {
+    @include positionFlex($jc: flex-start);
 
-  gap: 12px;
+    gap: 12px;
+  }
 }
