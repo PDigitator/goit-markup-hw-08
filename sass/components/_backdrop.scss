@@ -9,6 +9,7 @@
   opacity: 1;
   visibility: visible;
   perspective: 600px;
+  overflow-y: auto;
 
   @include transition(opacity, visibility);
 
