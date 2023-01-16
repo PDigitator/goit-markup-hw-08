@@ -1,7 +1,11 @@
 /* Product */
 .product {
+  display: flex;
+  flex-direction: column;
+
   @include transition(box-shadow);
 
+  &:active,
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -29,21 +33,28 @@
 
   user-select: none;
 
-  transform: translateY(100%);
+  transform: translateY(101%);
 
   @include transition(transform);
 
+  .product:active &,
   .product:hover &,
   .product:focus & {
     transform: translateY(0);
   }
+
+  // mobile
+  @media screen and (max-width: 480px) {
+    font-size: 3.75vw;
+  }
 }
 
 .product__container {
+  flex-grow: 1;
+
   padding: 19px 23px;
-  border-right: 1px solid var(--portfolio-product-cont-border-color);
-  border-bottom: 1px solid var(--portfolio-product-cont-border-color);
-  border-left: 1px solid var(--portfolio-product-cont-border-color);
+  border: 1px solid var(--portfolio-product-cont-border-color);
+  border-top: none;
 }
 
 .product__name {

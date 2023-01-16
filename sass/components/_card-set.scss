@@ -1,28 +1,15 @@
-/* Team */
-.team {
-  @extend %section;
-
-  background-color: var(--team-bgc);
-}
-
-.team__list {
-  background-color: var(--team-bgc);
-
+/* Card set */
+.card-set {
   // tablet
   @media screen and (min-width: 768px) {
-    @include positionFlex($jc: flex-start);
+    display: flex;
     flex-wrap: wrap;
 
     gap: var(--indent);
   }
 }
 
-.team__list-item {
-  box-shadow: var(--container-shadow);
-  border-radius: 0px 0px 4px 4px;
-
-  background-color: var(--primary-bgc);
-
+.card-set__item {
   &:not(:last-child) {
     // mobile
     @media screen and (max-width: 767px) {
@@ -40,6 +27,6 @@
 
   // desktop
   @media screen and (min-width: 1200px) {
-    --items: 4;
+    --items: 3;
   }
 }
