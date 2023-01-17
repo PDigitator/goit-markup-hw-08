@@ -886,9 +886,6 @@ body.no-scroll {
 }
 @media screen and (min-width: 768px) {
   .features__list-item {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
     --items: 2;
     -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
         flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
@@ -1018,9 +1015,6 @@ body.no-scroll {
 }
 @media screen and (min-width: 768px) {
   .team__list-item {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
     --items: 2;
     -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
         flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
@@ -1120,9 +1114,6 @@ body.no-scroll {
 /* Clients */
 .clients__list-item {
   height: 92px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   --items: 2;
   -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
       flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
@@ -1955,9 +1946,9 @@ body.no-scroll {
 }
 @media screen and (min-width: 768px) {
   .card-set__item {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     --items: 2;
     -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
         flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));

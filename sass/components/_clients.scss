@@ -9,10 +9,9 @@
 
 .clients__list-item {
   height: 92px;
-  display: inline-flex;
 
   --items: 2;
-  flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 
   // tablet
   @media screen and (min-width: 768px) {

@@ -9,8 +9,8 @@
 }
 
 .features__list {
+  // tablet
   @media screen and (min-width: 768px) {
-    // tablet
     @include positionFlex($ai: flex-start);
     flex-wrap: wrap;
 
@@ -28,10 +28,8 @@
 
   // tablet
   @media screen and (min-width: 768px) {
-    display: inline-flex;
-
     --items: 2;
-    flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   }
 
   // desktop

@@ -44,7 +44,5 @@
 }
 
 %card-set__item {
-  display: inline-flex;
-
-  flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
