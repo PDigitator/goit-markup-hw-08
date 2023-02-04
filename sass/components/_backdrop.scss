@@ -11,6 +11,11 @@
   perspective: 600px;
   overflow-y: auto;
 
+  // mobile
+  @media screen and (max-height: 594px) {
+    overflow: scroll;
+  }
+
   @include transition(opacity, visibility);
 
   &--is-hidden {

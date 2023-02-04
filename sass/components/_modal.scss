@@ -23,6 +23,12 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
+  // mobile
+  @media screen and (max-height: 594px) {
+    top: 10px;
+    transform: translateX(-50%) scale(1);
+  }
+
   @include transition(opacity, transform);
 
   .backdrop--is-hidden & {

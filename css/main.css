@@ -1421,6 +1421,11 @@ body.no-scroll {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-height: 594px) {
+  .backdrop {
+    overflow: scroll;
+  }
+}
 .backdrop--is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -1460,6 +1465,13 @@ body.no-scroll {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-height: 594px) {
+  .modal__container {
+    top: 10px;
+    -webkit-transform: translateX(-50%) scale(1);
+            transform: translateX(-50%) scale(1);
+  }
 }
 .backdrop--is-hidden .modal__container {
   opacity: 0;
